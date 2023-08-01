@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Car Rental</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" type="text/css" href="check.css">
+</head>
+
+<body>
+
+  <section id="header" class="header">
+    <div class="nav-bar">
+      <div class="logo">
+        <a href="index.html">Car Rental<span>.</span></a>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#check Rates">Check Rates</a></li>
+          <li><a href="#tasks">Tasks</a></li>
+          <li><a href="#review">Reviews</a></li>
+        </ul>
+      </div>
+      <div class="social-media">
+        <ul>
+          <li><a href="https://www.facebook.com/abdurrahman.khan.583234"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/AbdurRa64493794"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa fa-google-plus"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="hero">
+      <div class="row0">
+        <div class="left-sec">
+          <div class="container0">
+            <h1>Book the best Car for Rent</h1>
+            <form action="connect.php" method="POST">
+              <div class="form-group">
+                NAME:<input type="text" name="name" placeholder="Enter your Name"></div>
+              <div class="form-group">
+                Address:<input type="text" name="address" placeholder="Enter Your Address"> </div>
+              <div class="form-group" style="width: 85.5%; display:flex; padding: 10px 0px;">
+                Booking Date:<input type="date" name="bookingdate">
+                <input type="time" name="bookingtime">
+              </div>
+              <div class="form-group" style="width: 85.5%; display:flex;">
+                Returrn. Date:
+                <input type="date" name="returndate">
+                <input type="time" name="returntime">
+              </div>
+              <div class="form-group">
+                Phone Number: <input type="tel" name="phonenumber" placeholder="Enter your Phone Number"></div>
+              <div class="form-group">
+                <select style="text-align-last: center;" name="selectcar">
+                  Select your car:
+                  <option value="" disabled selected hidden>Select Your Car</option>
+                  <option value="bmw">BMW</option>
+                  <option value="farrari">Farrari</option>
+                  <option value="lamborgini">Lamborgini</option>
+                  <option value="jaguar">Jaguar</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </div>
+              <button class="btn" name="save">Registration</button>
+          </div>
+          </form>
+          <button class="CarModel-btn">
+            <a href="#">Car Model</a><span><i class="fa fa-arrow-circle-o-right"></i></span>
+          </button>
+        </div>
+        <div class="right-sec">
+          <div class="my-car">
+            <div><img src="img/1.png"></div>
+            <div><img src="img/2.png"></div>
+            <div><img src="img/3.png"></div>
+            <div><img src="img/4.png"></div>
+            <div><img src="img/5.png"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  <section class="home-about-area" id="about">
+    <div class="container-fluid">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-6 no-padding home-about-left">
+          <img src="img/carrr.webp">
+        </div>
+        <div class="col-lg-6 no-padding home-about-right">
+          <h1>Globally Connected <br>
+            by Large Network</h1>
+          <p>
+            <span>We are here to listen from you deliver exellence</span>
+          </p>
+          <p>
+            Car Rental Drive Cars is a self drive brand owned by Taaj, India’s second largest self drive car rental
+            company currently managing more than 63,000 cars in our fleet in India. Car Rental is currently present in
+            20 Indian cities including Bangalore, Pune, Mumbai, Delhi-NCR, Hyderabad, Chennai, Kolkata, Jaipur, Indore,
+            Chandigarh, Ahmedabad, Surat, Vadodara Ludhiana, Amritsar, Bhopal Goa, Dehradun, Rishikesh and Haridwar.
+          </p>
+          <a class="text-uppercase primary-btn" href="#">get details</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="model-area section-gap" id="check Rates">
+    <div class="container">
+      <div class="row d-flex justify-content-center pb-40">
+        <div class="col-md-8 pb-40 header-text">
+          <h1 class="text-center pb-10">Choose your Desired Car Model</h1>
+          <p class="text-center">
+            Who are in extremely love with eco friendly system.
+          </p>
+        </div>
+      </div>
+      <div class="active-model-carusel owl-carousel owl-theme owl-loaded">
+
+
+
+        <div class="owl-stage-outer">
+          <div class="owl-stage"
+            style="transform: translate3d(-2280px, 0px, 0px); transition: all 0s ease 0s; width: 7980px;">
+            <div class="owl-item cloned" style="width: 1110px;margin-right: 30px;">
+              <div class="row align-items-center single-model item">
+                <div class="col-lg-6 model-left">
+                  <div class="title justify-content-between d-flex">
+                    <h4 class="mt-20">Audi 3000 msi</h4>
+                    <h2>$149<span>/day</span></h2>
+                  </div>
+                  <p>
+                    The Audi 3000 msi is an executive car made by the German automaker Audi. Now in its fifth
+                    generation, the successor to the Audi 100 is manufactured in Neckarsulm.
+                  </p>
+                  <p>
+                    Capacity : 04 Person <br>
+                    Doors : 04 <br>
+                    Air Condition : Dual Zone <br>
+                    Transmission : Automatic
+                  </p>
+                  <a class="text-uppercase primary-btn" href="#">Book This Car Now</a>
+                </div>
+                <div class="col-lg-6 model-right">
+                  <img class="img-fluid" src="img/car1.webp" alt="" data-pagespeed-url-hash="2989186461"
+                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: 1110px;margin-right: 30px;">
+              <div class="row align-items-center single-model item">
+                <div class="col-lg-6 model-left">
+                  <div class="title justify-content-between d-flex">
+                    <h4 class="mt-20">Audi 3000 msi</h4>
+                    <h2>$149<span>/day</span></h2>
+                  </div>
+                  <p>
+                    The Audi 3000 msi is an executive car made by the German automaker Audi. Now in its fifth
+                    generation, the successor to the Audi 100 is manufactured in Neckarsulm.
+                  </p>
+                  <p>
+                    Capacity : 04 Person <br>
+                    Doors : 04 <br>
+                    Air Condition : Dual Zone <br>
+                    Transmission : Automatic
+                  </p>
+                  <a class="text-uppercase primary-btn" href="#">Book This Car Now</a>
+                </div>
+                <div class="col-lg-6 model-right">
+                  <img class="img-fluid" src="img/car1.webp" alt="" data-pagespeed-url-hash="2989186461"
+                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: 1110px; margin-right: 30px;">
+              <div class="row align-items-center single-model item">
+                <div class="col-lg-6 model-left">
+                  <div class="title justify-content-between d-flex">
+                    <h4 class="mt-20">Audi 3000 msi</h4>
+                    <h2>$149<span>/day</span></h2>
+                  </div>
+                  <p>
+                    The Audi 3000 msi is an executive car made by the German automaker Audi. Now in its fifth
+                    generation, the successor to the Audi 100 is manufactured in Neckarsulm.
+                  </p>
+                  <p>
+                    Capacity : 04 Person <br>
+                    Doors : 04 <br>
+                    Air Condition : Dual Zone <br>
+                    Transmission : Automatic
+                  </p>
+                  <a class="text-uppercase primary-btn" href="#">Book This Car Now</a>
+                </div>
+                <div class="col-lg-6 model-right">
+                  <img class="img-fluid" src="img/car1.webp" alt="" data-pagespeed-url-hash="2989186461"
+                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="owl-controls">
+          <div class="owl-nav">
+            <div class="owl-prev" style="display: none;">prev</div>
+            <div class="owl-next" style="display: none;">next</div>
+          </div>
+          <div class="owl-dots">
+            <div class="owl-dot active"><span></span></div>
+            <div class="owl-dot "><span></span></div>
+            <div class="owl-dot "><span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="facts-area section-gap" id="tasks">
+    <div class="container">
+      <div class="row">
+        <div class="col single-fact">
+          <h1 class="counter">2536</h1>
+          <p>Projects Completed</p>
+        </div>
+        <div class="col single-fact">
+          <h1 class="counter">6784</h1>
+          <p>Really Happy Clients</p>
+        </div>
+        <div class="col single-fact">
+          <h1 class="counter">1059</h1>
+          <p>Total Tasks Completed</p>
+        </div>
+        <div class="col single-fact">
+          <h1 class="counter">2239</h1>
+          <p>Cups of Coffee Taken</p>
+        </div>
+        <div class="col single-fact">
+          <h1 class="counter">435</h1>
+          <p>In House Professionals</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="reviews-area section-gap" id="review">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-8 pb-40 header-text text-center">
+          <h1>Some Features that Made us Unique</h1>
+          <p class="mb-10 text-center">
+            Who are in extremely love with eco friendly system.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="single-review">
+            <h4>Sivam Singh</h4>
+            <p>
+              I'm impressed by the complaint management of CarRental. They arranged in a very short time and with only 2
+              emails that the car rental company rewarded us an included "out of hours surcharge" which they charged
+              unjustified. Thank you CarRental.
+            </p>
+            <div class="star">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="single-review">
+            <h4>Rahul Kumar</h4>
+            <p>
+              First time with CarRental. I know they are intermediair and do not rent cars themself. We always book with
+              such firms because the discount they can provide and although we rent several cars with several firms
+              never had a bad experience.
+            </p>
+            <div class="star">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="single-review">
+            <h4>Mohd.Ali</h4>
+            <p>
+              A Very efficient team, a good car with magnificent pricing for my rental 30 MAy to June 6. We arrived very
+              early and they organized everything for immediate vehicle pick up of a clean car. Returned the car at 6:30
+              am and everything run smoothly. The staff was very polite!
+            </p>
+            <div class="star">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="single-review">
+            <h4>Ravi Yadav</h4>
+            <p>
+              CarRental itself is trustworthy. Excellent staff behavior, car was exactly what i booked and super clean,
+              best prices i've seen in the market at that time.The voucher was ok and no additional payment
+              required.Tyvm!
+            </p>
+            <div class="star">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="single-review">
+            <h4>Navjot Singh</h4>
+            <p>
+              I had many bad experiences with car rentals in the past, so the reviews for Portugal rentals were extra
+              disturbing to me. Luckily I got the recommendation for this website, and found the company Best Deal.
+              Really easy and nice service for a good price. Good stuff!
+            </p>
+            <div class="star">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="single-review">
+            <h4>Nelle Wade</h4>
+            <p>
+              Everything was great !
+              Kind staff who provided us useful information and helped us in the event of an accident, a very good car,
+              everything was of the highest quality !
+            </p>
+            <div class="star">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <footer class="footer-area section-gap">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="single-footer-widget">
+            <h6>Quick links</h6>
+            <ul>
+              <li><a href="#">Attach</a></li>
+              <li><a href="#">Offers</a></li>
+              <li><a href="#">Travel Adviser</a></li>
+              <li><a href="#">Corporate Car Rental Service</a></li>
+              <li><a href="#">Event Transport Solution</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="single-footer-widget">
+            <h6>Features</h6>
+            <ul>
+              <li><a href="#">Franchies</a></li>
+              <li><a href="#">Refund/canellation policy</a></li>
+              <li><a href="#">Term And Condition</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="single-footer-widget">
+            <h6>Resources</h6>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
+          <div class="single-footer-widget">
+            <h6>Follow Us</h6>
+            <p>Let us be social</p>
+            <div class="footer-social d-flex align-items-center">
+              <a href="https://www.facebook.com/abdurrahman.khan.583234"><i class="fa fa-facebook"></i></a>
+              <a href="https://twitter.com/AbdurRa64493794"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+              <a href="#"><i class="fa fa-behance"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4  col-md-6 col-sm-6">
+          <div class="single-footer-widget">
+            <h6>Newsletter</h6>
+            <p>Stay update with our latest</p>
+            <div class="" id="mc_embed_signup">
+              <form target="_blank" novalidate
+                action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                class="form-inline">
+                <input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''"
+                  onblur="this.placeholder = 'Enter Email '" required type="email">
+                <button class="click-btn btn btn-default"><span class="lnr lnr-arrow-right"></span>
+                </button>
+                <div style="position: absolute; left: -5000px;">
+                  <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+                </div>
+                <div class="info"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $(document).ready(function () {
+    });
+
+    $(".my-car").slick({
+      autoplay: true,
+      speed: 1000,
+      dots: true,
+      customPaging: function (slider, i) {
+        var thumb = $(slider.$slides[i]).data();
+        return '<a>' + (i + 1) + '</a>';
+      },
+
+    });
+
+  </script>
+  <script>
+    //  Counter Js 
+    if (document.getElementById("facts-area")) {
+      $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+      });
+    };
+  </script>
+  <script>
+    $('.active-model-carusel').owlCarousel({
+      items: 1,
+      loop: true,
+      margin: 30,
+      dots: true
+    });
+
+    $('.active-exibition-carusel').owlCarousel({
+      items: 3,
+      margin: 30,
+      autoplay: true,
+      loop: true,
+      dots: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        480: {
+          items: 1,
+        },
+        768: {
+          items: 2,
+        },
+        900: {
+          items: 3,
+        }
+      }
+    });
+  </script>
+</body>
+</html>
